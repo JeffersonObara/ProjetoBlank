@@ -1,7 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title size="large">Calcular area do quadrado</ion-title>
-    <ion-button [routerLink]="['/home']">Voltar</ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +12,10 @@
     </ion-toolbar>
   </ion-header>
 
-  <div class="h1">Para quadrado</div>
+    <div id="container">
+    <div class="h1">Para quadrado</div>
+    <br>
+    <br>
 
     <ion-item>
       <ion-label position="floating">Largura</ion-label>
@@ -34,5 +36,6 @@
     <ion-label color="warning">{{resultado2}}</ion-label>
     <br>
     <br>
-
+    <ion-button [routerLink]="['/home']">Voltar</ion-button>
+    </div>
 </ion-content>

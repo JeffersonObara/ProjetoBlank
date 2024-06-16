@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title size="large">Calcular area do triangulo</ion-title>
-    <ion-button [routerLink]="['/home']">Voltar</ion-button>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -14,6 +14,9 @@
   </ion-header>
 
   <div id="container">
+    <div class="h1">Para Triangulos</div>
+    <br>
+    <br>
     <ion-item>
       <ion-label position="floating">Base</ion-label>
       <ion-input type="number" placeholder="Informe um valor para BASE." name="base" [(ngModel)]="base"></ion-input>
@@ -23,12 +26,15 @@
       <ion-label position="floating">Altura</ion-label>
       <ion-input type="number" placeholder="Informe um valor para Altura." name="altura" [(ngModel)]="altura"></ion-input>
     </ion-item>
+    <br>
 
-    <ion-button color="secondary" (click)="calcularArea()">Calcular</ion-button>
+    <ion-button color="warning" (click)="calcularArea()">Calcular</ion-button>
     <br>
     <ion-label>Resposta</ion-label>
     <br>
     <ion-label color="warning">{{resultado}}</ion-label>
+    <br><br><br>
+    <ion-button [routerLink]="['/home']">Voltar</ion-button>
 
   </div>
 

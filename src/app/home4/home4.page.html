@@ -1,7 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title size="large">Calcular area do hexagono</ion-title>
-    <ion-button [routerLink]="['/home']">Voltar</ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +12,10 @@
     </ion-toolbar>
   </ion-header>
 
-<div class="h1">Para hexâgono</div>
+  <div id="container">
+  <div class="h1">Para hexâgono</div>
+  <br>
+  <br>
 
     <ion-item>
       <ion-label position="floating">Apótema</ion-label>
@@ -33,5 +35,9 @@
     <br>
     <ion-label color="warning">{{resultado3}}</ion-label>
     <br><br><br>
+
+
+    <ion-button [routerLink]="['/home']">Voltar</ion-button>
+    </div>
   
 </ion-content>
